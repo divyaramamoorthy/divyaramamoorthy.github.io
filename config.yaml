@@ -1,0 +1,311 @@
+baseURL: "https://divyaramamoorthy.github.io/"
+languageCode: "en-us"
+title: "Divya's Home Site"
+theme: 'hugo-profile'
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Divya's Page"
+  description: Divya's Home Page
+  # staticPath: ""  # The path to serve the static files from
+  # favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1.2rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#00000"
+    secondaryTextColor: "#30575A"
+    backgroundColor: "#ffffff" #"#C0D9D5"
+    secondaryBackgroundColor: "#AA4A44"
+    primaryColor: "#30575A"
+    secondaryColor: "#ffffff"
+    #30575A
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Divya" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Divya."
+    subtitle: "AI/ML Scientist and Researcher"
+    content: "Developing algorithms in Bayesian inference, interpretable AI, and language models for biology and healthcare applications."
+    image: images/profile_picture.JPG
+    bottomImage:
+      enable: true
+    roundImage: true # Make hero image circular | default false
+    # button:
+    #   enable: true
+    #   name: "Resume"
+    #   url: "#"
+    #   download: true
+    #   newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/divyaramamoorthy1
+        - icon: fab fa-github
+          url: https://github.com/divyaramamoorthy
+        - icon: fab fa-google
+          url: https://scholar.google.com/citations?user=BanN3UgAAAAJ&hl=en
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: false
+    # title: "About Me"
+    # image: "/images/me.png"
+    # content: |-
+    #   Sample text [example org.](https://example.com)
+    #
+    #   Sample text.
+    # skills:
+    #   enable: true
+    #   title: "Here are a few technologies I've been working with recently:"
+    #   items:
+    #     - "SKILLA"
+    #     - "SKILLB"
+    #     - "SKILLC"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Machine Learning Scientist II"
+        company: "Tessera Therapeutics"
+        companyUrl: "https://www.tesseratherapeutics.com"
+        date: "Nov 2022 - present"
+        # featuredLink:
+        #   enable: true
+        #   name: "View the project"
+        #   url: "https://example.com"
+        info:
+          enable: false
+        content: |
+          I am currently working as a scientist on the ML-AI Research team at Tessera Therapeutics, designing language models and bayesian models for nucleotide sequence design. I also lead the company's machine learning education program.
+          - Develop Bayesian approximation machine learning algorithm to design RNAs, enabling up to a 10x reduction in cost and 2x in time for screening platform
+          - Designed language models and imbalanced learners for DNA manufacturing optimization, with reduction in manufacturing cancellation rates by 59%
+          - Managed CO-OP employee, and teach an ‘Intro to Machine Learning’ series for company employees, with 50+ attendees per session
+
+      - job: "Graduate Researcher and Short-term Postdoc"
+        company: "MIT"
+        companyUrl: "https://fraenkel.mit.edu"
+        date: "Aug 2016 - Oct 2022"
+        info:
+          enable: false
+        content: |
+          My thesis research focused research focused on developing Bayesian nonparametric machine learning models for neurodegenerative diseases.
+
+          - Developed Bayesian nonparametric model (Mixture of Gaussian Processes with monotonic biases) for timeseries clinical data, and released [open-source python package](https://github.com/fraenkel-lab/mogp)
+          - Characterized ALS biomarkers using longitudinal metabolomics data
+          - Analyzed multi-modal genomic, proteomic, and transcriptomic data
+          - Mentored and designed research projects for 5 undergrads and 2 masters students
+
+      - job: "Modeling & Simulations Intern"
+        company: "Novartis"
+        companyUrl: "https://www.novartis.com"
+        date: "Feb 2021 - May 2021"
+        info:
+          enable: false
+        content: |
+          I interned with the Modeling & Simulations team at Novartis Institutes for BioMedical Research (NIBR).
+          - Developed ordinary differential equation (ODE) models for CAR-T therapies
+          - Analyze clonal heterogeneity of CAR-Ts using single-cell transcriptomics
+
+      - job: "Software Engineer Intern"
+        company: "IBM"
+        companyUrl: "https://www.ibm.com/"
+        date: "June 2015 - Aug 2015"
+        info:
+          enable: false
+        content: |
+          I interned with the IBM Cloud Security team, where I contributed to cloud container services.
+          - Tested cloud container services, directly contributing to the release of IBM cloud services
+          - Developed APIs for Bluemix and Openstack and created prototype for user interface
+          - Worked as part of a collaborative team and was integrated with full-time employees
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "PhD in Biological Engineering"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://fraenkel.mit.edu"
+        date: "2016 - 2022"
+        content: |-
+          Thesis: Machine Learning Approaches for Characterizing ALS Disease Progression
+      - title: "Bachelor of Science in Biomedical Engineering"
+        school:
+          name: "The University of Texas at Austin"
+          # url: "https://www.utexas.edu"
+        date: "2012 - 2016"
+        # content: |-
+      - title: "Bachelor of Arts in Plan II Honors"
+        school:
+          name: "The University of Texas at Austin"
+          # url: "https://www.utexas.edu"
+        date: "2012 - 2016"
+        # content: |-
+
+  # Achievements
+  achievements:
+    enable: false
+
+  # projects
+  projects:
+    enable: false
+
+  #Contact
+  contact:
+    enable: false
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    # socialNetworks:
+    #   github: https://github.com
+    #   linkedin: https://linkedin.com
+    #   twitter: https://twitter.com
+    #   instagram: https://instagram.com
+    #   facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
