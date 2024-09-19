@@ -185,10 +185,10 @@ params:
         info:
           enable: false
         content: |
-          I am currently working as a scientist on the ML-AI Research team at Tessera Therapeutics, designing language models and bayesian models for nucleotide sequence design. I also lead the company's machine learning education program.
-          - Develop Bayesian approximation machine learning algorithm to design RNAs, enabling up to a 10x reduction in cost and 2x in time for screening platform
+          I am currently working as a scientist on the ML-AI Research team at Tessera Therapeutics, designing language models and Bayesian models for nucleotide sequence design. I also lead the company's machine learning education program.
+          - Developed Bayesian approximation machine learning algorithm to design RNAs, enabling up to a 10x reduction in cost and 2x in time for screening platform
           - Designed language models and imbalanced learners for DNA manufacturing optimization, with reduction in manufacturing cancellation rates by 59%
-          - Managed CO-OP employee, and teach an ‘Intro to Machine Learning’ series for company employees, with 50+ attendees per session
+          - Managed CO-OP employee, and taught an ‘Intro to Machine Learning’ series for company employees, with 50+ attendees per session
 
       - job: "Graduate Researcher and Short-term Postdoc"
         company: "MIT"
@@ -213,7 +213,7 @@ params:
         content: |
           I interned with the Modeling & Simulations team at Novartis Institutes for BioMedical Research (NIBR).
           - Developed ordinary differential equation (ODE) models for CAR-T therapies
-          - Analyze clonal heterogeneity of CAR-Ts using single-cell transcriptomics
+          - Analyzed clonal heterogeneity of CAR-Ts using single-cell transcriptomics
 
       - job: "Software Engineer Intern"
         company: "IBM"
