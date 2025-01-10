@@ -7,14 +7,14 @@ tags:
  - Bayesian
  - Bayesian optimization
  - Iterative design
-#image: /images/profile_picture.jpg
+image: /images/010925_bayes_opt_header.png
 description: "Bayesian optimization in biotechnology"
 toc:
 ---
 ##
-<p align="center">
+<!-- <p align="center">
   <img src=/images/010925_bayes_opt_header.png />
-</p>
+</p> -->
 
 **Biology is ripe for machine learning, but there remains one central limitation: biological data is often expensive to generate and time-consuming to collect.** This means that most companies trying to leverage machine learning are working with small datasets.
 
