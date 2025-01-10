@@ -20,7 +20,7 @@ toc:
 
 One of the most powerful paradigms in this small-dataset domain is **Bayesian Optimization.** This article breaks down what Bayesian Optimization is and explains how it can be applied to design experiments.
 
-# Uncertainty in Machine Learning
+## Uncertainty in Machine Learning
 
 Bayesian models are different than traditional models in that they explicitly represent uncertainty - when the model is less clear about it's predictions. For example, if you are using AI for self-driving cars or medical diagnoses, you want the model to signal when it’s unsure of its predictions so that a human can step in to double-check.
 
