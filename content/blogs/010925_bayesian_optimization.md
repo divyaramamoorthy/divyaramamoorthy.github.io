@@ -1,6 +1,6 @@
 ---
 title: "Bayesian Optimization in Biotech"
-date: 2025-01-09T15:01:00
+date: 2025-01-10T15:01:00
 draft: false
 author: "Divya Ramamoorthy"
 tags:
