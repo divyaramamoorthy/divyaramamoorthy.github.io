@@ -22,18 +22,18 @@ One of the most powerful paradigms in this small-dataset domain is **Bayesian Op
 
 ## Uncertainty in Machine Learning
 
-Bayesian models are different than traditional models in that they explicitly represent uncertainty - when the model is less clear about it's predictions. For example, if you are using AI for self-driving cars or medical diagnoses, you want the model to signal when it’s unsure of its predictions so that a human can step in to double-check.
+Bayesian models are different than traditional models in that they explicitly represent uncertainty - when the model is less clear about its predictions. For example, if you are using AI for self-driving cars or medical diagnoses, you want the model to signal when it’s unsure of its predictions so that a human can step in to double-check.
 
 Uncertainty in machine learning typically arises from two sources:
 
 1. **Aleatoric uncertainty**: Caused by inherent noise in the data. This could be due to experimental error, mislabeled samples, or natural variation.
-2. **Epistemic uncertainty**: Arises when the model is asked to make a prediction on a case  with little data to base the prediction on.
+2. **Epistemic uncertainty**: Arises when the model is asked to make a prediction on a case with little data to base the prediction on.
 
 Bayesian models account for both types of uncertainty, adjusting their confidence at each prediction point based on the quality and amount of available data.
 
 ## What is Bayesian Optimization?
 
-Many machine learning models are designed for large datasets, but in biology, we often need models tailored for small datasets. **Bayesian Optimization** is a sequential design strategy that works by iteratively running small experiments. This approach aligns well with how scientists naturally run experiments: screening a small number of molecules, analyzing patterns and designing the next set of molecules, and running the next experiment, until they reach their goal.
+Many machine learning models are designed for large datasets, but in biology, we often need models tailored for small datasets. **Bayesian Optimization** is a sequential design strategy that works by iteratively running small experiments. This approach aligns well with how scientists naturally run experiments: screening a small number of molecules, analyzing patterns to design the next set of molecules, and running the next experiment, until they reach their goal.
 
 Let’s illustrate Bayesian Optimization with a real-world biology example. Imagine we’re a biotech company trying to identify the most potent antibiotic from millions of candidates. Screening all of them is infeasible, so we’re limited to testing 50 samples at a time. Here’s how Bayesian Optimization helps:
 
@@ -54,7 +54,7 @@ Let’s illustrate Bayesian Optimization with a real-world biology example. Imag
 
 ## Limitations of Bayesian Optimization
 
-One significant limitation of Bayesian Optimization is the trade-off between cost and time. The approach requires multiple iterative steps, which can extend timelines. If the design-build-test cycle is lengthy, the time cost may outweigh the financial savings. Factors to consider include the duration of each experimental round, the cost per sample, the size of the design space, and the distance from the target.
+One significant limitation of Bayesian Optimization is the trade-off between cost and time. The approach requires multiple iterative steps, which can extend timelines. If the design-build-test cycle is lengthy, the time cost may outweigh the financial savings. Factors to consider include the duration of each experimental round, the cost per sample, and the size of the design space.
 
 ## Conclusion
 
