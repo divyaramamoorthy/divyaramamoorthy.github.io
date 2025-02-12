@@ -1,6 +1,7 @@
 {{ $recentPostsPath := .Site.Params.footer.recentPosts.path | default "blogs" }}
 {{ $currentNumOfrecentPosts := len (where .Site.RegularPages "Type" $recentPostsPath) }} 
 {{ if and (gt $currentNumOfrecentPosts 0) (.Site.Params.footer.recentPosts.enable | default false) }} 
+{{ if not (and (.Site.Params.footer.recentPosts.hideOnBlogList) (eq .Section "blogs")) }}
 <div class="container py-3" id="recent-posts">
     {{ $recentPostsCount := .Site.Params.footer.recentPosts.count | default 3 }}
     {{ $recentPosts := where .Site.RegularPages "Section" $recentPostsPath | first $recentPostsCount }}
@@ -35,4 +36,5 @@
         {{ end }}
     </div>
 </div>
+{{ end }}
 {{ end }}

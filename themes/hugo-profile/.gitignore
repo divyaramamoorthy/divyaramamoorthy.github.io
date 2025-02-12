@@ -1,7 +1,7 @@
 /config.yaml
 /content
 /static/images
-.vscode
+.vscode/
 
 ### Hugo ###
 # Generated files by hugo

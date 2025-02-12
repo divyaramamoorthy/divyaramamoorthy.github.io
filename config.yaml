@@ -188,7 +188,7 @@ params:
           I am currently working as a scientist on the ML-AI Research team at Tessera Therapeutics, designing language models and Bayesian models for nucleotide sequence design. I also lead the company's machine learning education program.
           - Developed Bayesian approximation machine learning algorithm to design RNAs, enabling up to a 10x reduction in cost and 2x in time for screening platform
           - Designed language models and imbalanced learners for DNA manufacturing optimization, with reduction in manufacturing cancellation rates by 59%
-          - Managed CO-OP employee, and taught an ‘Intro to Machine Learning’ series for company employees, with 50+ attendees per session
+          - Managed CO-OP employee, and taught an 'Intro to Machine Learning' series for company employees, with 50+ attendees per session
 
       - job: "Graduate Researcher and Short-term Postdoc"
         company: "MIT"
@@ -267,10 +267,11 @@ params:
 
   footer:
     recentPosts:
+      enable: true
+      hideOnBlogList: true
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
       disableFeaturedImage: false
     # socialNetworks:
     #   github: https://github.com
