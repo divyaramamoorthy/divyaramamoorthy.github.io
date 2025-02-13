@@ -44,7 +44,7 @@ In these cases, each expert may focus on a specific class, learn unique patterns
 MoE models are prone to overfitting, particularly during fine-tuning. Since tokens are divided among multiple experts, each expert processes fewer samples per batch. Similar to how small batch sizes impact the stability of traditional neural networks, MoE models exhibit a higher propensity for overfitting and training instability due to reduced sample diversity within each expert.
 
 ## Code Implementations
-If you're curious about detailed implementations (how the match actually works under the hood!), check out the code for two examples that I've worked on:
+If you're curious about detailed implementations (how the math actually works under the hood!), check out the code for two examples that I've worked on:
 
 - **(Deep Learning MoE)[https://github.com/divyaramamoorthy/moe]**: A minimalist implementation of PyTorch MoE model that I wrote when putting together this article, inspired by DeepSeek's architecture. I've included a notebook that shows how to use the model, train it for a small synthetic dataset, and visualize how it separates data between experts.
 - **(Bayesian MoE)[https://github.com/fraenkel-lab/mogp]**: A project from my PhD that applies a mixture of experts model for patient stratification, where gating is defined by a Dirichlet process and experts are Gaussian processes. We released this as an open-source Python package (mogp), and its code can be used as a framework for setting up a Bayesian MoE model.
