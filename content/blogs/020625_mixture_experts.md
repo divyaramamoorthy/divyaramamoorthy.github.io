@@ -1,5 +1,5 @@
 ---
-title: "Mixture of Experts Modelsfor Biotech"
+title: "Mixture of Experts Models for Biotech"
 date: 2025-02-13T12:41:00
 draft: false
 author: "Divya Ramamoorthy"
