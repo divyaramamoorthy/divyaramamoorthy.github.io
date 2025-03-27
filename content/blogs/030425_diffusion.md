@@ -49,7 +49,7 @@ One of the most mature applications is **de novo protein design**, where new pro
 *Image of generative protein diffusion model, from "De novo design of protein structure and function with RFdiffusion" (Watson et al., [2023](https://www.nature.com/articles/s41586-023-06415-8))*
 
 ## What's on the horizon?
-Flow-matching is a potential alternative to diffusion models. Diffusion models are often time-consuming to train and sensitive to the training schedule. Flow-matching offers a more robust and efficient framework, enabling faster convergence and improved results.
+Flow-matching is a promising advance over diffusion models. Diffusion models are often time-consuming to train and sensitive to the training schedule. Flow-matching offers a more robust and efficient framework, enabling faster convergence and improved results.
 
 Additionally, hybrid approaches that combine diffusion models with graph neural networks (GNNs) are being explored to better capture molecular relationships and further enhance performance in biodesign.
 
