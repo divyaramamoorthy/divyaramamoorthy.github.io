@@ -43,7 +43,7 @@ Diffusion models excel at capturing spatial patterns, making them highly valuabl
 - Protein-ligand interactions
 - Small molecule generation
 
-One of the most mature applications is **de-novo protein design**, where new protein structures are generated from scratch. Proteins are composed of chains of amino acids, each linked with specific angles and orientations. Diffusion models can represent proteins as a set of 3D coordinates and orientations, allowing for the generation of realistic and functional structures. By applying constraints that enforce symmetrical properties, researchers can improve model performance and generate more stable and functional protein structures.
+One of the most mature applications is **de novo protein design**, where new protein structures are generated from scratch. Proteins are composed of chains of amino acids, each linked with specific angles and orientations. Diffusion models can represent proteins as a set of 3D coordinates and orientations, allowing for the generation of realistic and functional structures. By applying constraints that enforce symmetrical properties, researchers can improve model performance and generate more stable and functional protein structures.
 
 ![RFDiffusion](/images/032725_rfdiff.png)
 *Image of generative protein diffusion model, from "De novo design of protein structure and function with RFdiffusion" (Watson et al., [2023](https://www.nature.com/articles/s41586-023-06415-8))*
