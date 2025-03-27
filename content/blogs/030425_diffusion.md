@@ -6,7 +6,7 @@ author: "Divya Ramamoorthy"
 tags:
  - Diffusion
  - GenAI
-image: /images/032725_diffusion_header.png
+image: images/032725_diffusion_header.png
 description: "Diffusion Models in Biotechnology"
 toc:
 ---
